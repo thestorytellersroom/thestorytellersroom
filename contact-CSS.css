@@ -1,0 +1,131 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1em;
+    color: #fff;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(Pictures/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.head{
+    border-bottom: 2px solid #fff;
+}
+
+.head img{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin: 10px;
+}
+
+.head h1{
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: 50px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-family: 'Lily Script One';
+    text-shadow: 4px 4px 4px rgb(91, 70, 116);
+}
+
+.main-nav{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 40px;
+}
+
+.main-nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100px;
+    cursor: pointer;
+}
+
+.main-nav li:hover{
+    opacity: 0.7;
+}
+
+.center{
+    margin-top: 50px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.center h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.media{
+    margin-top: 20px;
+}
+.media a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.media button{
+    color: #fff;
+    padding: 10px 25px;
+    background: transparent;    ;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    margin: 0 40px 15px;
+    font-size: 17px;
+    transition: 0.25s;
+}
+
+.media .fb button{
+    border: 2px solid #3b5998;
+}
+
+.media .insta button{
+    border: 2px solid #d9317a;
+}
+
+.media .email button{
+    border: 2px solid #db4437;
+}
+
+.media .fb button:hover{
+    background-color: #3b5998;
+}
+
+.media .insta button:hover{
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.media .email button:hover{
+    background-color: #db4437;
+}
+
+footer{
+    padding: 10px 0;
+    margin-top: 40px;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
