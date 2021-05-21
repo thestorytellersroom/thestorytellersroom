@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,141 +8,10 @@
     <title>The Storytellers' Room</title>
     <link rel="stylesheet" href="style.css">
     <style>
-    *
-{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body
-{
-    background-color: rgba(255, 255, 255, 0.904);
-    overflow: hidden;
-}
-.burger
-{
-    margin: 30px 0 20px 20px;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    position: inherit;
-    z-index: 1;
-}
-.burger .bar
-{
-    background-color: tomato;
-    height: 4px;
-    width: 100%;
-    display: block;
-}
-#line1
-{
-    transform: translateY(-4px);
-}
-#line3
-{
-    transform: translateY(4px);
-}
-.change .bar
-{
-    background: white;
-    transition: 0.3s ease-in;
-}
-.change #line1
-{
-    transform: translateY(4px) rotateZ(-45deg);
-}
-.change #line2
-{
-    display: none;
-}
-.change #line3
-{
-    transform: translateY(-1px) rotate(45deg);
-}
-.menu-bg,.menubar
-{
-    top: 0;
-    left: 0;
-    position: absolute;
-}
-.menu-bg
-{
-    z-index: 0;
-    height: 0;
-    width: 0;
-    transition: 0.5s ease;
-}
-nav
-{
-    position: relative;
-    border-bottom: 1px solid rgb(110, 105, 105);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.icon
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.icon h5
-{
-    font-size: 20px;
-    font-weight: bold;
-    
-}
-.icon img
-{
-    height: 70px;
-    width: 70px;
-    margin: 5px;
-}
-.change-bg
-{
-    position: absolute;
-    border-radius: 50%;
-    height: 790px;
-    width: 790px;
-    transform: translate(-60%,-30%);
-    animation: example 10s linear .1s infinite alternate;
-}
-@keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color: rgb(26, 197, 169);top:0px;}
-    50%  {background-color: blue ; left:5px; top:5px;}
-    75%  {background-color: green; left:0px; top:5px;}
-    100% {background-color: orange.red; left:0px; top:0px;}
-  }
-
-.menu li 
-{
-    
-margin: 20px;
-list-style: none;
-font-size: 30px;
-padding: 10px;
-z-index: 2;
-}
-.menu a
-{
-    color: white;
-    text-decoration: none;
-}
-.menu
-{
-    position: absolute;
-    padding: 0 13px;
-    opacity: 0;
-    right: 32px;
-    top: 277px;
-}
 
     </style>
 </head>
+
 <body>
     <nav>
         <div class="menubar">
@@ -151,24 +21,75 @@ z-index: 2;
                 <div id="line3" class="bar"></div>
             </div>
             <div class="menu-bg" id="menu-bg">
-            <ul class="menu" id="menulist">
-                <li><a href="home-HTML.html">HOME</a></li>
-                <li><a href="audiobooks-HTML.html">AUDIOBOOKS</a></li>
-                <li><a href="about-HTML.html">ABOUT</a></li>
-                <li><a href="contact-HTML.html">CONTACT</a></li>
-            </ul>
-        </div>
+                <ul class="menu" id="menulist">
+                    <li><a href="home-HTML.html"><span>H</span>O<span>M</span>E</a></li>
+                    <li><a href="audiobooks-HTML.html"><span>A</span>UDIO<span>B</span>OOKS</a></li>
+                    <li><a href="about-HTML.html"><span>A</span>BO<span>U</span>T</a></li>
+                    <li><a href="contact-HTML.html"><span>C</span>ON<span>T</span>ACT</a></li>
+                </ul>
+            </div>
         </div>
         <div class="icon">
             <img src="1.png" alt="siteicon">
-            <h5>The Storytellers' Room</h5>
+            <h5><span>T</span>he<span>S</span>torytellers'<span>R</span>oom</h5>
         </div>
     </nav>
-    
+
 
     <main>
-
-
+        <div class="intro">
+            <img src="" alt="">
+        </div>
+        <div class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo minima repellat autem enim impedit
+                consectetur perferendis deserunt, culpa, sunt veniam sapiente alias fuga id unde dolores voluptates
+                ducimus ab laudantium perspiciatis. Soluta aperiam eligendi perspiciatis maiores architecto in impedit
+                officiis tempore vitae est voluptate asperiores accusantium recusandae reiciendis, illum culpa quasi
+                aliquam laudantium deleniti ipsa. Veniam, sapiente officia quam ex enim a iste dicta voluptatum nobis
+                magni eum eaque neque, consequuntur ut dignissimos perferendis temporibus est dolores officiis
+                architecto ea? Esse, blanditiis aliquid sequi culpa quaerat similique totam at autem ipsam quia iure,
+                eveniet aperiam repellat ea. Veritatis, dicta ea!</p>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo minima repellat autem enim impedit
+                consectetur perferendis deserunt, culpa, sunt veniam sapiente alias fuga id unde dolores voluptates
+                ducimus ab laudantium perspiciatis. Soluta aperiam eligendi perspiciatis maiores architecto in impedit
+                officiis tempore vitae est voluptate asperiores accusantium recusandae reiciendis, illum culpa quasi
+                aliquam laudantium deleniti ipsa. Veniam, sapiente officia quam ex enim a iste dicta voluptatum nobis
+                magni eum eaque neque, consequuntur ut dignissimos perferendis temporibus est dolores officiis
+                architecto ea? Esse, blanditiis aliquid sequi culpa quaerat similique totam at autem ipsam quia iure,
+                eveniet aperiam repellat ea. Veritatis, dicta ea!</p>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo minima repellat autem enim impedit
+                consectetur perferendis deserunt, culpa, sunt veniam sapiente alias fuga id unde dolores voluptates
+                ducimus ab laudantium perspiciatis. Soluta aperiam eligendi perspiciatis maiores architecto in impedit
+                officiis tempore vitae est voluptate asperiores accusantium recusandae reiciendis, illum culpa quasi
+                aliquam laudantium deleniti ipsa. Veniam, sapiente officia quam ex enim a iste dicta voluptatum nobis
+                magni eum eaque neque, consequuntur ut dignissimos perferendis temporibus est dolores officiis
+                architecto ea? Esse, blanditiis aliquid sequi culpa quaerat similique totam at autem ipsam quia iure,
+                eveniet aperiam repellat ea. Veritatis, dicta ea!</p>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo minima repellat autem enim impedit
+                consectetur perferendis deserunt, culpa, sunt veniam sapiente alias fuga id unde dolores voluptates
+                ducimus ab laudantium perspiciatis. Soluta aperiam eligendi perspiciatis maiores architecto in impedit
+                officiis tempore vitae est voluptate asperiores accusantium recusandae reiciendis, illum culpa quasi
+                aliquam laudantium deleniti ipsa. Veniam, sapiente officia quam ex enim a iste dicta voluptatum nobis
+                magni eum eaque neque, consequuntur ut dignissimos perferendis temporibus est dolores officiis
+                architecto ea? Esse, blanditiis aliquid sequi culpa quaerat similique totam at autem ipsam quia iure,
+                eveniet aperiam repellat ea. Veritatis, dicta ea!</p>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo minima repellat autem enim impedit
+                consectetur perferendis deserunt, culpa, sunt veniam sapiente alias fuga id unde dolores voluptates
+                ducimus ab laudantium perspiciatis. Soluta aperiam eligendi perspiciatis maiores architecto in impedit
+                officiis tempore vitae est voluptate asperiores accusantium recusandae reiciendis, illum culpa quasi
+                aliquam laudantium deleniti ipsa. Veniam, sapiente officia quam ex enim a iste dicta voluptatum nobis
+                magni eum eaque neque, consequuntur ut dignissimos perferendis temporibus est dolores officiis
+                architecto ea? Esse, blanditiis aliquid sequi culpa quaerat similique totam at autem ipsam quia iure,
+                eveniet aperiam repellat ea. Veritatis, dicta ea!</p>
+        </div>
     </main>
 
     <footer>
@@ -177,24 +98,22 @@ z-index: 2;
     </footer>
     <script>
 
-function burgermenu()
-{
-    let menu = document.getElementById("menulist")
-    if(menu.style.opacity == "0")
-    {
-        menu.style.opacity="100"
-        document.getElementById("menu").classList.add("change")
-        document.getElementById("menu-bg").classList.add("change-bg")
-    }
-    else
-    {
-        menu.style.opacity="0"
-        document.getElementById("menu").classList.remove("change")
-        document.getElementById("menu-bg").classList.remove("change-bg")
-    }
-    
-}
+        function burgermenu() {
+            let menu = document.getElementById("menulist")
+            if (menu.style.opacity == "0") {
+                menu.style.opacity = "100"
+                document.getElementById("menu").classList.add("change")
+                document.getElementById("menu-bg").classList.add("change-bg")
+            }
+            else {
+                menu.style.opacity = "0"
+                document.getElementById("menu").classList.remove("change")
+                document.getElementById("menu-bg").classList.remove("change-bg")
+            }
+
+        }
 
     </script>
 </body>
+
 </html>

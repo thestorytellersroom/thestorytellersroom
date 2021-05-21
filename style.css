@@ -1,4 +1,4 @@
-*
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');*
 {
     padding: 0;
     margin: 0;
@@ -7,7 +7,6 @@
 body
 {
     background-color: rgba(255, 255, 255, 0.904);
-    overflow: hidden;
 }
 .burger
 {
@@ -65,7 +64,7 @@ body
 }
 nav
 {
-    position: relative;
+    position: sticky;
     border-bottom: 1px solid rgb(110, 105, 105);
     display: flex;
     flex-direction: row;
@@ -81,9 +80,18 @@ nav
 }
 .icon h5
 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
-    
+    text-transform:capitalize;
+    font-family: 'Reggae One', cursive;
+}
+span
+{
+color: red;
+}
+.menu span
+{
+    color: red;
 }
 .icon img
 {
@@ -120,7 +128,7 @@ z-index: 2;
 }
 .menu a
 {
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .menu
@@ -130,4 +138,20 @@ z-index: 2;
     opacity: 0;
     right: 32px;
     top: 277px;
+}
+main .intro 
+{
+    z-index: -1;
+    background-image: url(https://source.unsplash.com/1515x600/?nature,water);
+   width: 100%;
+   position: relative;
+    height: 600px;
+    border: 2px solid red;
+    background-attachment: fixed;
+}
+.content
+{
+    position: relative;
+    margin: 20px;
+    padding: 30px;
 }
