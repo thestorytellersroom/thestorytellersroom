@@ -218,3 +218,22 @@ main .intro
     margin: 20px;
     padding: 30px;
 }
+@media screen and (max-width: 660px)
+{
+    .icon h5
+    {
+        font-size: 23px;
+    }
+}
+@media screen and (max-width: 360px)
+{
+    .icon h5
+    {
+        font-size: 18px;
+    }
+    .burger .bar
+{
+    height: 3.5px;
+    width: 80%;
+}
+}
