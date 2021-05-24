@@ -8,6 +8,46 @@ body
 {
     background-color: rgba(255, 255, 255, 0.904);
 }
+.loader
+{
+    background-color: rgb(252, 252, 252);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow-x:hidden;
+    z-index: 100;
+}
+#ftco-loader
+{
+   
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow-x:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.loader img
+{
+    height: 130px;
+    width: 130px;
+    opacity: ;
+    animation: loadanimation  .6s linear .5s infinite alternate; ;
+}
+@keyframes loadanimation
+{
+    from
+    {
+        height: 100px;
+        width: 100px;
+    }
+    to {
+        height: 130px;
+        width: 130px;
+    } 
+}
 .burger
 {
     margin: 30px 0 20px 20px;
@@ -19,7 +59,7 @@ body
 }
 .burger .bar
 {
-    background-color: tomato;
+    background-color: rgb(204, 31, 0);
     height: 4px;
     width: 100%;
     display: block;
@@ -49,14 +89,23 @@ body
 {
     transform: translateY(-1px) rotate(45deg);
 }
-.menu-bg,.menubar
+.menu-bg
 {
     top: 0;
     left: 0;
     position: absolute;
+    background-color: white;
+}
+.menubar
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    
 }
 .menu-bg
 {
+    position: inherit;
     z-index: 0;
     height: 0;
     width: 0;
@@ -65,11 +114,14 @@ body
 nav
 {
     position: sticky;
-    border-bottom: 1px solid rgb(110, 105, 105);
+    border-bottom: 2px solid rgb(110, 105, 105);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-color: black;
+    box-shadow: 0px 0px 0px 0px;
+    z-index: 200;
 }
 .icon
 {
@@ -77,6 +129,7 @@ nav
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 .icon h5
 {
@@ -84,6 +137,7 @@ nav
     font-weight: bold;
     text-transform:capitalize;
     font-family: 'Reggae One', cursive;
+    color: white;
 }
 span
 {
@@ -108,6 +162,12 @@ color: red;
     transform: translate(-60%,-30%);
     animation: example 10s linear .1s infinite alternate;
     background-color: rgb(0, 0, 0);
+    
+}
+.blur
+{
+    filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 @keyframes example {
     0%   { left:0px; top:0px;}
@@ -133,7 +193,7 @@ z-index: 2;
 }
 .menu
 {
-    position: absolute;
+    position: inherit;
     padding: 0 13px;
     opacity: 0;
     right: 32px;
@@ -142,11 +202,10 @@ z-index: 2;
 main .intro 
 {
     z-index: -1;
-    background-image: url(https://source.unsplash.com/1515x600/?nature,water);
+    background-color: rgb(212, 212, 212); 
    width: 100%;
    position: relative;
     height: 600px;
-    border: 2px solid red;
     background-attachment: fixed;
 }
 .content

@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Storytellers' Room</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-
-    </style>
 </head>
 
-<body>
+<body onload="loader()">
+    <div class="loader">
+    <div id="ftco-loader" class="show fullscreen">
+        <img src="images/loader.svg" alt="">
+    </div>
+</div>
     <nav>
         <div class="menubar">
             <div id="menu" class="burger" onclick="burgermenu()">
@@ -30,7 +32,6 @@
             </div>
         </div>
         <div class="icon">
-            <img src="1.png" alt="siteicon">
             <h5><span>T</span>he<span>S</span>torytellers'<span>R</span>oom</h5>
         </div>
     </nav>
@@ -38,7 +39,6 @@
 
     <main>
         <div class="intro">
-            <img src="" alt="">
         </div>
         <div class="content">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo minima repellat autem enim impedit
@@ -96,22 +96,7 @@
 
 
     </footer>
-    <script>
-
-        function burgermenu() {
-            let menu = document.getElementById("menulist")
-            if (menu.style.opacity == "0") {
-                menu.style.opacity = "100"
-                document.getElementById("menu").classList.add("change")
-                document.getElementById("menu-bg").classList.add("change-bg")
-            }
-            else {
-                menu.style.opacity = "0"
-                document.getElementById("menu").classList.remove("change")
-                document.getElementById("menu-bg").classList.remove("change-bg")
-            }
-
-        }
+    <script src="script.js">
 
     </script>
 </body>
