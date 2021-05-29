@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');*
-{
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 html
 {
@@ -14,14 +16,15 @@ body
 }
 .intro-img 
 {
-    background: url(https://source.unsplash.com/random) no-repeat;
+    background: url(images/thumb.jpg) no-repeat;
     background-attachment: scroll;
+    background-position: center;
     background-size: cover;
     position: relative;
     background-color: rgb(212, 212, 212); 
     width: 100%;
-    height: 70vh;
-    background-attachment: fixed;
+    height: 100vh;
+    
 }
 .intro
 {
@@ -31,7 +34,7 @@ body
     left: 0;
     position: inherit;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     background-color: rgba(245, 230, 230, 0.226);
     clip-path: polygon(100% 0,0 100%,100% 100%);
     backdrop-filter: blur(4px);
@@ -138,13 +141,7 @@ body
     position: absolute;
     background-color: white;
 }
-.menubar
-{
-    top: 0;
-    left: 0;
-    position: absolute;
-    
-}
+
 nav{
     top: 0;
     position: sticky;
@@ -169,6 +166,14 @@ nav
     backdrop-filter: blur(2px);
     box-shadow: 0px 0px 0px 0px;
     z-index: 200;
+    
+}
+.menubar
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    
     
 }
 .icon
@@ -238,6 +243,44 @@ z-index: 2;
     right: 32px;
     top: 277px;
 }
+.offering
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+    border: .01em solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.offering .feat
+{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    box-shadow: 1px 0px 3px 0px;
+    margin: 30px;
+    border-radius: 8px;
+   
+}
+.feat:hover
+{
+    transition: .6s ease;
+    box-shadow: 1px 0px 9px 0px;
+    scale: 1.1;
+}
+.feat h6
+{
+    color: red;
+    font-size: 25px;
+    font-weight: 900;
+   text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+   
+}
 
 .content
 {
@@ -245,8 +288,51 @@ z-index: 2;
     margin: 20px;
     padding: 30px;
 }
+footer
+{
+    height: 10vh;
+    background-color: black;
+    width: 100%;
+    position: relative;
+}
+footer  .cpyrt
+{
+    position: absolute;
+}
+.cpyrt
+{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.social
+{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social li
+{
+    list-style: none;
+    text-decoration: none;
+    margin: 5px;
+    
+}
+.social a
+{
+    color: white;
+    font-size: 25px;
+}
 @media screen and (max-width: 660px)
 {
+    .ico{
+        display: none;
+    }
     .icon h5
     {
         font-size: 23px;
@@ -254,9 +340,14 @@ z-index: 2;
 }
 @media screen and (max-width: 360px)
 {
+    
+    .ico{
+        display: none;
+    }
     .icon h5
     {
-        font-size: 18px;
+        font-size: 20px;
+        margin-left: 5px;
     }
     .burger .bar
 {
