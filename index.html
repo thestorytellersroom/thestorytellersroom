@@ -11,6 +11,71 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
         integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="../package/swiper-bundle.min.css">
+
+<style>
+      .swiper-button-next,.swiper-button-prev
+    {
+      color: #000;
+      opacity: 10%;
+    }
+    .swiper-pagination li
+    {
+    color: orangered;
+    }
+
+    .swiper-container {
+      width: 95vw;
+      height: 80vh;
+
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-slide img
+    {
+      position: absolute;
+      height: 500px;
+      width: 950px;
+      object-fit: contain;
+    }
+    @media(max-width:765px)
+    {
+      .swiper-container {
+      width: 95vw;
+      height: 40vh;
+
+    }
+      .swiper-slide img
+    {
+      position: absolute;
+      height: 500px;
+      width: 520px;
+      object-fit: contain;
+    }
+    }
+</style>
 </head>
 
 <body onload="loader()">
@@ -43,9 +108,26 @@
 
 
     <main>
-        <div class="intro-img">
-
-        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/2021-05-25_14-52-41.jpg"/></div>
+              <div class="swiper-slide"><img src="images/2021-05-25_14-54-02.jpg"/></div>
+              <div class="swiper-slide"><img src="images/2021-05-25_14-54-15.jpg"/></div>
+              <div class="swiper-slide"><img src="images/2021-05-25_14-55-17.jpg"/></div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+              <div class="swiper-slide">Slide 10</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        
         <div class="offering">
             <div class="feat">
                 <h6><i class="fas fa-headphones-alt"></i>AudioBook</h6>
@@ -88,6 +170,26 @@
         <p class="cpyrt">Copyright &copy; 2021 by Storyteller'sRoom</p>
     </footer>
     <script src="script.js">
+<script src="../package/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
 
     </script>
 </body>

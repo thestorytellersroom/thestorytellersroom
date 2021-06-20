@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Storytellers' Room</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .thumbnail {
+            background: url(/images/thumb.jpg) no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 72vh;
+            position: relative;
+        }
+
+        .thumbnail .img-txt {
+            background-color: rgba(0, 0, 0, 0.534);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: white;
+        }
+
+        .title {
+            display: block;
+            position: absolute;
+            margin: 5px;
+            top: 60%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .author {
+            display: block;
+            position: absolute;
+            margin: 5px;
+            top: 80%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+       .cat {
+            display: block;
+            position: absolute;
+            margin: 5px;
+            top: 55%;
+            
+            color: rgba(255, 255, 255, 0.795);
+            left: 0;
+           
+        }
+       .thumbnail .lstn {
+            position: absolute;
+            margin: 5px;
+            bottom: 10px;
+            left: 10px;
+            padding: 8px 10px;
+            background: #bb0000;
+            border: 1px solid white;
+            color: white;
+            border-radius: 30px;
+            font-weight: 600;
+            
+        }
+        .post-pop
+        {
+            display: flex;
+            position: relative;
+            top: 72%;
+            left: 0;
+            margin: 5px;
+        }
+        .post-pop .view
+        {
+            margin-left: 10px;
+        }
+        .fab
+        {
+            margin: 5px;
+        }
+
+        .content {
+            text-align: justify;
+        }
+
+        .side-social {
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            height: 200px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        .col-lg-2
+        {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        .col-lg-10
+        {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        .side-social a {
+            padding: 20px;
+            font-size: 40px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .side-social li {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .side-social a:hover {
+            opacity: 0.7;
+        }
+
+        .side-social .fa-facebook {
+            color: #3B5998;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .side-social .fa-twitter {
+            color: #55ACEE;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+
+        .side-social .fa-linkedin {
+            color: #007bb5;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .side-social .fa-youtube {
+            color: #bb0000;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .side-social .fa-instagram {
+            background: #f09433;
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+            border-radius: 20%;
+        }
+
+
+
+
+        .row {
+            --bs-gutter-x: 10px;
+            padding: 5px;
+        }
+
+        @media(max-width:765px) {
+            .thumbnail {
+                background: url(/images/thumb.jpg) no-repeat center;
+                background-size: cover;
+                width: 100%;
+                height: 32vh;
+                position: relative;
+            }
+            .thumbnail .lstn {
+            left: 66%;
+        }
+        .title {
+            top: 60%;
+            font-size: 20px; 
+        }
+
+        .author {
+            top: 85%;
+            font-size: 13px;
+        }
+       .cat {
+            top: 50%;
+            font-size: 11px;
+        }
+        .post-pop .view,.rating
+        {
+           font-size: 14px;
+        }
+        }
+    </style>
+</head>
+
+<body onload="loader()">
+    <div class="loader">
+        <div id="ftco-loader" class="show fullscreen">
+            <img src="images/loader.svg" alt="">
+        </div>
+    </div>
+    <nav>
+        <div class="menubar">
+            <div id="menu" class="burger" onclick="burgermenu()">
+                <div id="line1" class="bar"></div>
+                <div id="line2" class="bar"></div>
+                <div id="line3" class="bar"></div>
+            </div>
+            <div class="menu-bg" id="menu-bg">
+                <ul class="menu" id="menulist">
+                    <li><a href="home-HTML.html"><span>H</span>O<span>M</span>E</a></li>
+                    <li><a href="audiobooks-HTML.html"><span>A</span>UDIO<span>B</span>OOKS</a></li>
+                    <li><a href="about-HTML.html"><span>A</span>BO<span>U</span>T</a></li>
+                    <li><a href="contact-HTML.html"><span>C</span>ON<span>T</span>ACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="icon">
+            <img class="ico" src="1.png" alt="">
+            <h5><span>T</span>he<span>S</span>toryteller's<span>R</span>oom</h5>
+        </div>
+    </nav>
+
+    <div class="row ">
+        <div class="col-lg-10 order-lg-last all">
+            <div class="thumbnail">
+                <div class="img-txt">
+                    <span class="cat">Comedy</span>
+                    <h1 class="title">Tantra Mantra</h1>
+                    <div class="author">By- Debopriya </div>
+                    <div class="post-pop">
+                        <div class="rating"><i class="fas fa-star-half-alt"></i>9.5</div>
+                        <div class="view"><i class="fas fa-eye"></i>18.9k</div>
+                    </div>
+                    <button class="lstn"><i class="fab fa-youtube"></i>YouTube</button>
+                </div>
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eligendi vitae quia nisi magnam porro
+                sed suscipit optio sint? Distinctio hic esse, suscipit pariatur perferendis dolor ipsam architecto! Quo
+                commodi ipsam, alias ipsa officiis expedita animi ea in excepturi autem voluptates nam hic recusandae
+                sint voluptas voluptatem deserunt iusto doloremque maxime tempora pariatur voluptatum corrupti. Debitis
+                quidem illo, laboriosam obcaecati porro natus quis nemo tenetur ullam voluptas voluptatum quisquam
+                maxime, amet doloremque excepturi distinctio error magnam id. Voluptates reiciendis eius id laboriosam
+                nemo quae accusantium tempora quidem inventore, natus odio nihil nam veniam explicabo cumque repellendus
+                in facilis ipsa officia nesciunt aliquid quo! Magni quam ut maxime asperiores dolorem, esse, odit optio
+                veritatis sunt temporibus perspiciatis quibusdam animi. Similique velit totam qui odit quibusdam
+                repellat unde, rem at modi necessitatibus tempora sunt obcaecati vitae id enim, minus reprehenderit,
+                error aut ea eum! Accusamus aliquid, earum ad deleniti tempore, voluptatibus voluptate maxime totam
+                harum tempora quod quasi deserunt accusantium dolore consequatur eaque magnam dicta qui dolor at
+                adipisci. Facere labore odit autem sapiente tempore ex atque, maxime impedit? Non, impedit. Harum rerum
+                doloribus fuga dignissimos sit suscipit excepturi nihil facere ad necessitatibus quia eum hic reiciendis
+                vero non, id autem tenetur maxime sequi? Consequatur minima animi exercitationem sapiente. Enim animi
+                culpa accusantium odit maiores quod deserunt voluptatibus, ipsum ab quo harum tempore ducimus iste.
+                Consequatur facere necessitatibus impedit ullam debitis dolorem quibusdam iure eos ex. Impedit ad nemo
+                iure qui consectetur beatae cum hic maxime rem. Nobis minima quis vero fuga animi. Dignissimos fugiat
+                magnam et iusto ut rem labore modi saepe tempora, debitis laudantium asperiores maxime dolore minima
+                maiores alias cumque error ex beatae sed omnis perferendis? Id libero obcaecati quae est, corporis
+                deserunt, inventore earum natus veritatis quod qui dicta officia neque nulla? Voluptate necessitatibus
+                corporis atque tenetur cum distinctio esse, debitis doloremque autem sit iure voluptas molestias
+                quisquam consectetur voluptatum quod unde rerum cumque blanditiis est at ad enim dolorem? Minus
+                voluptatibus adipisci laboriosam est eos quaerat soluta iste officia ab. Tempore, nostrum numquam
+                debitis accusantium unde minima natus, quam dolorum nemo ratione autem voluptate ipsum qui dolor
+                dolorem, maxime reiciendis odit fugiat facilis quas. Perferendis reprehenderit corporis quaerat
+                perspiciatis illum saepe, dolores quam nulla, soluta quisquam totam minus necessitatibus iste beatae
+                unde qui ad nisi laboriosam eligendi. In cupiditate veritatis similique quisquam expedita unde ducimus
+                quam nemo tempore quis minus quas eos ipsum, perspiciatis fugit delectus ipsam!
+            </div>
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+            <ul class="side-social">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <ul class="social">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <p class="cpyrt">Copyright &copy; 2021 by TheStoryteller'sRoom</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

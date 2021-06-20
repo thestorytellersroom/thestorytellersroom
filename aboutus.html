@@ -1,12 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AboutUs</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+    integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+    *
+    {
+        padding:0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+.abp
+{
+    display: flex;
+    flex-direction: column;
     
+    
+   
+    width: 100%;
+}
+.abp h2,.heading
+{
+    color: rgba(0, 0, 0, 0.644);
+}
+.abp p
+{
+    color: rgba(0, 0, 0, 0.644);
+}
+.q1,.q2
+{
+    width:80% ;
+    text-align: justify;
+   margin:10px 20px;
+}
+.team
+{
+    width:80% ;
+    text-align: justify;
+   margin:10px 20px;
+}
+.team-det
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.team-det img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 60%;
+    display: block;
+    margin: auto;
+}
+.mem
+{
+    background: rgba(216, 214, 214, 0.61);
+    margin: 10px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+</style>
+
+</head>
+
+<body onload="loader()">
+    <div class="loader">
+        <div id="ftco-loader" class="show fullscreen">
+            <img src="images/loader.svg" alt="">
+        </div>
+    </div>
+    <nav>
+        <div class="menubar">
+            <div id="menu" class="burger" onclick="burgermenu()">
+                <div id="line1" class="bar"></div>
+                <div id="line2" class="bar"></div>
+                <div id="line3" class="bar"></div>
+            </div>
+            <div class="menu-bg" id="menu-bg">
+                <ul class="menu" id="menulist">
+                    <li><a href="home-HTML.html"><span>H</span>O<span>M</span>E</a></li>
+                    <li><a href="audiobooks-HTML.html"><span>A</span>UDIO<span>B</span>OOKS</a></li>
+                    <li><a href="about-HTML.html"><span>A</span>BO<span>U</span>T</a></li>
+                    <li><a href="contact-HTML.html"><span>C</span>ON<span>T</span>ACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="icon">
+            <img class="ico" src="1.png" alt="">
+            <h5><span>T</span>he<span>S</span>toryteller's<span>R</span>oom</h5>
+        </div>
+    </nav>
+    <div class="abp">
+        <div class="q1">
+        <h2>Who are we?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aspernatur, hic voluptate assumenda sunt,
+            commodi quidem quae, consequuntur voluptatum numquam recusandae amet culpa accusamus? Perferendis!</p>
+        </div>
+        <div class="q2">
+            <h2>Our Aim!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum temporibus deserunt adipisci deleniti
+            aliquid sunt aliquam cupiditate. Corrupti culpa hic, molestiae dolor autem iusto atque!</p>
+        </div>    
+        </div>
+        <div class="team">
+        <h2 class="heading">Our Team</h2>
+    <div class="team-det ">
+       
+        <div class="mem">
+            <img src="Founder.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, commodi?</p>
+            <div class="social"></div>
+        </div>
+        <div class="mem">
+            <img src="Founder.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, commodi?</p>
+            <div class="social"></div>
+        </div>
+        <div class="mem">
+            <img src="Founder.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, commodi?</p>
+            <div class="social"></div>
+        </div>
+        <div class="mem">
+            <img src="Founder.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, commodi?</p>
+            <div class="social"></div>
+        </div>
+        <div class="mem">
+            <img src="Founder.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, commodi?</p>
+            <div class="social"></div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <ul class="social">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <p class="cpyrt">Copyright &copy; 2021 by TheStoryteller'sRoom</p>
+    </footer>
+    <script src="script.js"></script>
+
 </body>
+
 </html>
