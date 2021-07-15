@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>recent-posts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            margin: 10px;
+        }
+
+        .thumbnail {
+            background: url(images/thumb.jpg) no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 72vh;
+            position: relative;
+        }
+
+        .thumbnail .img-txt {
+            background-color: rgba(0, 0, 0, 0.534);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: white;
+        }
+
+        .title {
+            display: block;
+            position: absolute;
+            margin: 5px;
+            top: 60%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .author {
+            display: block;
+            position: absolute;
+            margin: 5px;
+            top: 80%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .cat {
+            display: block;
+            position: absolute;
+            margin: 5px;
+            top: 55%;
+
+            color: rgba(255, 255, 255, 0.795);
+            left: 0;
+
+        }
+
+        .thumbnail .lstn {
+            position: absolute;
+            margin: 5px;
+            bottom: 10px;
+            left: 10px;
+            padding: 8px 10px;
+            background: #bb0000;
+            border: 1px solid white;
+            color: white;
+            border-radius: 30px;
+            font-weight: 600;
+
+        }
+
+        .post-pop {
+            display: flex;
+            position: relative;
+            top: 72%;
+            left: 0;
+            margin: 5px;
+        }
+
+        .post-pop .view {
+            margin-left: 10px;
+        }
+
+        .fab {
+            margin: 5px;
+        }
+
+        .toppost {
+            background: rgba(0, 0, 0, 0.534);
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            margin: 10px;
+           
+            position: absolute;
+            right: 0;
+            top: 0;
+
+        }
+
+        .toppost h1 {
+            color: #fff;
+            text-align: center;
+        }
+
+        .toppost .post {
+            border: 2px solid #fff;
+            color: white;
+            position: relative;
+            display: flex;
+            margin: 5px;
+            height: 75px;
+            width: 435px;
+        }
+
+        .post img {
+            height: 72px;
+            width: 72px;
+        }
+        .post .post-details
+        {
+            margin-left: 5px;
+        }
+
+        .post a {
+            text-decoration: none;
+            color: white;
+        }
+
+        @media(max-width:765px) {
+            .thumbnail {
+                background: url(/images/thumb.jpg) no-repeat center;
+                background-size: cover;
+                width: 100%;
+                height: 32vh;
+                position: relative;
+            }
+
+            .thumbnail .lstn {
+                left: 66%;
+            }
+
+            .title {
+                top: 60%;
+                font-size: 20px;
+            }
+
+            .author {
+                top: 85%;
+                font-size: 13px;
+            }
+
+            .cat {
+                top: 50%;
+                font-size: 11px;
+            }
+
+            .post-pop .view,
+            .rating {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="menubar">
+          <div id="menu" class="burger" onclick="burgermenu()">
+            <div id="line1" class="bar"></div>
+            <div id="line2" class="bar"></div>
+            <div id="line3" class="bar"></div>
+          </div>
+          <div class="menu-bg" id="menu-bg">
+            <ul class="menu" id="menulist">
+              <li><a href="index.html"><span>H</span>O<span>M</span>E</a></li>
+              <li><a href="#"><span>A</span>UDIO<span>B</span>OOKS</a></li>
+              <li><a href="aboutus.html"><span>A</span>BO<span>U</span>T</a></li>
+              <li><a href="#"><span>C</span>ON<span>T</span>ACT</a></li>
+              <label >
+                <input type="checkbox" name="" id="" checked>
+                <span></span>
+                <i class="indicator"></i>
+              </label>
+            </ul>
+            
+          </div>
+        </div>
+        <div class="icon">
+          <img class="ico" src="1.png" alt="">
+          <h5><span>T</span>he<span>S</span>toryteller's<span>R</span>oom</h5>
+        </div>
+      </nav>
+    <div class="main">
+
+        <div class="thumbnail">
+            <div class="img-txt">
+                <span class="cat">Comedy</span>
+                <h1 class="title">Tantra Mantra</h1>
+                <div class="author">By-Mr. Debobrata Patra </div>
+                <div class="post-pop">
+                    <div class="rating"><i class="fas fa-star-half-alt"></i>9.5</div>
+                    <div class="view"><i class="fas fa-eye"></i>18.9k</div>
+                </div>
+                <button class="lstn"><i class="fab fa-youtube"></i>YouTube</button>
+            </div>
+            <div class="toppost">
+                <h1>Top Post</h1>
+                <div class="post">
+                    <div class="image">
+                        <img src="images/2021-05-25_14-54-15.jpg" alt="">
+                    </div>
+                    <div class="post-details">
+                        <a href="#">Title</a>
+                        <p>26April,2020</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="image">
+                        <img src="images/2021-05-25_14-54-15.jpg" alt="">
+                    </div>
+                    <div class="post-details">
+                        <a href="#">Title</a>
+                        <p>26April,2020</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="image">
+                        <img src="images/2021-05-25_14-54-15.jpg" alt="">
+                    </div>
+                    <div class="post-details">
+                        <a href="#">Title</a>
+                        <p>26April,2020</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="image">
+                        <img src="images/2021-05-25_14-54-15.jpg" alt="">
+                    </div>
+                    <div class="post-details">
+                        <a href="#">Title</a>
+                        <p>26April,2020</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="image">
+                        <img src="images/2021-05-25_14-54-15.jpg" alt="">
+                    </div>
+                    <div class="post-details">
+                        <a href="#">Title</a>
+                        <p>26April,2020</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <h1>start</h1>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Helpful Links</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul>
+                        <li>
+                            <p>Phone-033-2122542</p>
+                        </li>
+                        <li>
+                            <p>Phone-033-214547542</p>
+                        </li>
+                        <li>
+                            <p>email us- storytellersroom(at)gmail.com</p>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

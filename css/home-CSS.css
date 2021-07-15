@@ -1,0 +1,193 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1em;
+    color: #fff;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.head{
+    border-bottom: 2px solid #fff;
+}
+
+.head img{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin: 10px;
+}
+
+.head h1{
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: 50px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-family: 'Lily Script One';
+    text-shadow: 4px 4px 4px rgb(91, 70, 116);
+}
+
+.main-nav{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 40px;
+}
+
+.main-nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100px;
+    cursor: pointer;
+}
+
+.main-nav li:hover{
+    opacity: 0.7;
+}
+
+.center{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.desc p{
+    margin-bottom: 10px;
+}
+
+.desc h2{
+    margin-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.acc h3{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.acc p{
+    margin-bottom: 10px;
+}
+
+.acc a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.acc button{
+    color: #fff;
+    padding: 10px 25px;
+    background: transparent;    ;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.acc .yt button{
+    border: 2px solid #ff0000;
+}
+
+.acc .spotify button{
+    border: 2px solid #1DB954;
+}
+
+.acc .google button{
+    border: 2px solid #F4B400;
+}
+
+.acc .breaker button{
+    border: 2px solid rgb(0, 61, 173);
+}
+
+.acc .radiop button{
+    border: 2px solid #ce262f;
+}
+
+.acc .yt button:hover{
+    background-color: #ff0000;
+}
+
+.acc .spotify button:hover{
+    background-color: #1DB954;
+}
+
+.acc .google button:hover{
+    background-color: #F4B400;
+}
+
+.acc .breaker button:hover{
+    background-color: rgb(0, 61, 173);
+}
+
+.acc .radiop button:hover{
+    background-color: #ce262f;
+}
+
+.breaker img{
+    height: 13px;
+    width: 15px;
+}
+
+.radiop img{
+    height: 15px;
+    width: 20px;
+}
+
+.btns{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btns a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btns button{
+    color: #fff;
+    padding: 10px 25px;
+    background: transparent;
+    border: 2px solid cyan;    ;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    margin: 0 40px;
+    font-size: 17px;
+}
+
+.btns button:hover{
+    background-color: rgb(23, 187, 187);
+    border-color: cyan;
+}
+
+footer{
+    padding: 10px 0;
+    margin-top: 40px;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

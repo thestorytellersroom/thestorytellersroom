@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .intro
+        {
+            background-image: linear-gradient(to left,transparent,rgb(0, 0, 0) 80%),url('images/event.jpg') ;
+            background-position: right;
+            height: 100vh;
+            width: 100%;
+            position: relative;
+        }
+        .text
+        {
+            position: relative;
+            height: 90vh;
+            width: 40vw;
+            color: white;
+           top: 0vh;
+           left: 0px;
+          
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+            
+           
+        }
+        
+       
+        .swname
+        {
+            position: relative;
+            color: #C1751A;
+            padding: 10px;
+            font-size: 70px;
+            font-weight: 700;
+            letter-spacing: .1px;
+        }
+        .swname::after
+        {
+            content:'';
+            width: 200px;
+            height: 6px;
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            right: 0;
+            background-color: #C1751A;
+        }
+        .list
+        {
+            padding: 20px;
+            position: relative;
+            right: 100px;
+            
+        }
+        .list li
+        {
+            margin: 5px;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.705);
+        }
+        .linkbtn
+        {
+            display: flex;
+        }
+        .text a
+        {
+            text-decoration: none;
+            color: white;
+            padding: 15px 70px;
+            border: 2px solid white;
+            margin: 3px;
+            font-size: 20px;
+        }
+        
+        .text a:nth-child(1),.text a:hover
+        {
+            background-color: #c16b1a;
+            border: 2px solid #C1751A;
+            transition: border .2s ease-in;
+        }
+        @media screen and (max-width:780px) {
+            .intro
+        {
+            background-image: linear-gradient(transparent,rgb(0, 0, 0) 80%),url('images/event.jpg') ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .text
+        { 
+            position: relative;
+            height: 90vh;
+            width: 100%;
+            top: 230px;  
+           
+        }
+        .swname
+        {
+            font-size: 55px;
+        }
+        .list
+        {
+            padding: 20px;
+            position: relative;
+            right: 50px;
+            
+        }
+        .text a
+        {
+            
+            padding: 15px 60px;
+          
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+       <div class="text">
+           <h1 class="swname">NewYear Night</h1>
+           <ul class="list">
+               <li>Entry fee Rs. 500</li>
+               <li>Beat Boxing</li>
+               <li>DJ Richard</li>
+               <li>Sky show</li>
+               <li>Arijit Singh</li>
+           </ul>
+           <div class="linkbtn">
+           <a class="btn" href="#">Register</a>
+           <a class="btn" href="#">Upcoming</a>
+        </div>
+       </div>
+    </div>
+    <div class="nav"></div>
+</body>
+</html>

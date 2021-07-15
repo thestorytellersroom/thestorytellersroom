@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Storytellers' Room</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
     integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
@@ -64,6 +64,60 @@
       object-fit: contain;
     }
 
+    /*checkbox style starts*/
+label
+{
+  position: relative;
+  top: 17px;
+  right: 12px;
+  cursor: pointer;
+}
+label input
+{
+  appearance: none;
+  display: none;
+}
+label span
+{
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 30px;
+  border: 2px solid white;
+  background: rgb(255, 255, 255);
+  border-radius: 40px;
+  box-shadow: inset 0 2px 15px rgba(0,0,0,0.2),
+                inset 0 2px 2px rgba(0,0,0,0.2),
+                inset 0 -1px 1px rgba(0,0,0,0.2);
+}
+label .indicator
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5),
+              inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  transition:all 0.5s ease-in-out;
+}
+
+label input:checked ~ .indicator
+{
+  left: 40px;
+ background: #fff;
+}
+label input:checked ~ span
+{
+  border: 2px solid rgb(0, 0, 0);
+  background:#222;
+}
+
+    /*checkbox style starts*/
+
+
     @media(max-width:765px) {
       .swiper-container {
         width: 100%;
@@ -96,15 +150,21 @@
       </div>
       <div class="menu-bg" id="menu-bg">
         <ul class="menu" id="menulist">
-          <li><a href="home-HTML.html"><span>H</span>O<span>M</span>E</a></li>
-          <li><a href="audiobooks-HTML.html"><span>A</span>UDIO<span>B</span>OOKS</a></li>
-          <li><a href="about-HTML.html"><span>A</span>BO<span>U</span>T</a></li>
-          <li><a href="contact-HTML.html"><span>C</span>ON<span>T</span>ACT</a></li>
+          <li><a href="index.html"><span>H</span>O<span>M</span>E</a></li>
+          <li><a href="#"><span>A</span>UDIO<span>B</span>OOKS</a></li>
+          <li><a href="aboutus.html"><span>A</span>BO<span>U</span>T</a></li>
+          <li><a href=""><span>C</span>ON<span>T</span>ACT</a></li>
+          <label >
+            <input type="checkbox" name="" id="" checked>
+            <span></span>
+            <i class="indicator"></i>
+          </label>
         </ul>
+        
       </div>
     </div>
     <div class="icon">
-      <img class="ico" src="1.png" alt="">
+      <img class="ico" src="images/1.png" alt="">
       <h5><span>T</span>he<span>S</span>toryteller's<span>R</span>oom</h5>
     </div>
   </nav>
@@ -187,15 +247,56 @@
     </div>
   </main>
 
-  <footer>
-    <ul class="social">
-      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-    </ul>
-    <p class="cpyrt">Copyright &copy; 2021 by Storyteller'sRoom</p>
-  </footer>
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Helpful Links</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact us</h4>
+                <ul>
+                    <li>
+                        <p>Phone-033-2122542</p>
+                    </li>
+                    <li>
+                        <p>Phone-033-214547542</p>
+                    </li>
+                    <li>
+                        <p>email us- storytellersroom(at)gmail.com</p>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
   <script src="script.js">
     <script src="../package/swiper-bundle.min.js"></script>
 

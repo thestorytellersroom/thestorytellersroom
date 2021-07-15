@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1em;
+    color: #fff;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.head{
+    border-bottom: 2px solid #fff;
+}
+
+.head img{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin: 10px;
+}
+
+.head h1{
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: 50px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-family: 'Lily Script One';
+    text-shadow: 4px 4px 4px rgb(91, 70, 116);
+}
+
+.main-nav{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 40px;
+}
+
+.main-nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100px;
+    cursor: pointer;
+}
+
+.main-nav li:hover{
+    opacity: 0.7;
+}
+
+.center{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.desc p{
+    margin-bottom: 10px;
+}
+.desc h2{
+    margin-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.desc figure{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.desc .pic{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, #74b9ff, #e66767);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+}
+@keyframes animated-gradient{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
+.desc .pic img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.team h3{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.team ol{
+    margin-left: 20px;
+}
+
+.team ol li{
+    list-style-type: decimal;
+    margin-bottom: 3px;
+}
+
+footer{
+    padding: 10px 0;
+    margin-top: 40px;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
