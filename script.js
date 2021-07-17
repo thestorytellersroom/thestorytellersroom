@@ -19,3 +19,18 @@
       {
           document.querySelector(".loader").style.display="none";
       }
+      function navcng()
+      {
+          if(scrollY>=200)
+          {
+              document.querySelector("nav").style.background="#24262b"; 
+              document.querySelector("nav").style.transition="all .8s ease"; 
+              document.querySelector(".menu").classList.add("scroll");
+              document.querySelector(".icon").classList.add("scroll");
+          }
+          else{
+            document.querySelector("nav").style.background="#fff"; 
+            document.querySelector(".menu").classList.remove("scroll");
+              document.querySelector(".icon").classList.remove("scroll");
+          }
+      }
